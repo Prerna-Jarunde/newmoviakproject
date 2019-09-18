@@ -5,9 +5,9 @@
         <!-- Footer Top -->
         <!-- Moviak Heading  -->
         <div class="col-md-3">
-          <div class="txt text-left blog font-weight-bold">Moviak.com</div>
+          <div class="main-title text-left font-weight-bolder">Moviak.com</div>
           <!-- Content Under Moviak Heading  -->
-          <div class="txt text-left">
+          <div class="sub-title text-left">
             Moviak is an online platform that allows users to book tickets for movies,
             sporting events and concerts.
             <br />Moviak was founded in 2007.
@@ -46,52 +46,53 @@
         <!-- Custom Services Section -->
         <div class="col-md-3">
           <!-- Custom Services Heading  -->
-          <div class="txt text-left blog font-weight-bold">Custom Services</div>
+          <div class="main-title text-left font-weight-bolder">Custom Services</div>
           <!-- Options Under Custom Services Section  -->
-          <div class="txt text-left">Help and Contact</div>
-          <div class="txt text-left">Return Policy</div>
-          <div class="txt text-left">Feedback</div>
-          <div class="txt text-left">Careers</div>
+          <div class="sub-title text-left">
+            <div>Help and Contact</div>
+            <div class="mt-2">Return Policy</div>
+            <div class="mt-2">Feedback</div>
+            <div class="mt-2">Careers</div>
+          </div>
         </div>
-
         <!-- Recent Posts Section  -->
         <div class="col-md-3">
           <!-- Recent Posts Heading  -->
-          <div class="txt text-left blog font-weight-bold">Recent Posts</div>
+          <div class="main-title text-left font-weight-bolder">Recent Posts</div>
           <!-- Content Under Recent Posts Section  -->
-          <div class="txt text-left">Doctor Strange assemble with the Avengers</div>
+          <div class="sub-title text-left">Doctor Strange assemble with the Avengers</div>
           <div class="date text-muted text-left">December 20,2016</div>
-          <div class="txt text-left">5 movies to watch this week(29 Sep 2016)</div>
+          <div class="sub-title text-left">5 movies to watch this week(29 Sep 2016)</div>
           <div class="date text-muted text-left">December 20,2016</div>
         </div>
 
         <!-- Contact Us Section  -->
         <div class="col-md-3">
           <!-- Contact Us Heading  -->
-          <div class="txt text-left blog font-weight-bold">Contact Us</div>
+          <div class="main-title text-left font-weight-bolder">Contact Us</div>
           <!-- Address  -->
-          <div class="txt text-left">
+          <div class="sub-title text-left">
             <!-- Font Awesome Location Arrow  -->
             <span>
-              <font-awesome-icon :icon="['fas', 'location-arrow']" class="fa-1x text-white" />
+              <font-awesome-icon :icon="['fas', 'location-arrow']" class="fa-1x" />
             </span>
             9067 Zurich, Switzerland 87
           </div>
 
           <!-- Email  -->
-          <div class="txt text-left">
+          <div class="sub-title text-left">
             <!-- Font Awesome Envelope Icon  -->
             <span>
-              <font-awesome-icon :icon="['far', 'envelope']" class="fa-1x text-white" />
+              <font-awesome-icon :icon="['far', 'envelope']" class="fa-1x" />
             </span>
             abc@gmail.com
           </div>
 
           <!-- Phone Number  -->
-          <div class="txt text-left phone">
+          <div class="sub-title text-left phone">
             <!-- Font Awesome Phone-Alt Icon  -->
             <span>
-              <font-awesome-icon :icon="['fas', 'phone-alt']" class="fa-1x text-white" />
+              <font-awesome-icon :icon="['fas', 'phone-alt']" class="fa-1x" />
             </span>
             + 01 234 567 8
           </div>
@@ -119,15 +120,18 @@ export default {};
 <style lang="scss" scoped>
 .footer-look {
   background-image: url("../assets/images/footer.png");
-  // margin-top: 50px;
+  margin-top: 50px;
   padding: 101px;
   background-repeat: no-repeat;
   background-size: cover;
-
-  .txt {
+  .main-title {
+    font-size: 23px;
     color: white;
+  }
+  .sub-title {
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
+    color: white;
   }
   .phone {
     color: rgb(255, 136, 0);
@@ -135,49 +139,28 @@ export default {};
   .date {
     font-size: 12px;
   }
-  .blog {
-    font-size: 18px;
-  }
-}
-.social-media-links {
-  padding: 0px;
-  list-style: none;
-  height: 2rem;
-  width: 2rem;
 
-  .social-media-icon {
-    border-radius: 24px;
-    background-color: grey;
-    margin: 2px;
-    padding-left: 0px;
+  .social-media-links {
+    padding: 0px;
+    list-style: none;
+    height: 2rem;
     width: 2rem;
-    padding-top: 3px;
-  }
-  .svg:not(:root).svg-inline--fa {
-    overflow: visible;
-    margin-top: 7px;
-  }
-}
-.your-email {
-  font-size: 10px;
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .bg-look {
-    background-image: url("../assets/images/footer.png");
-    margin-top: 15px;
-    padding: 13px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .bg-look {
-    background-image: url("../assets/images/footer.png");
-    margin-top: 21px;
-    padding: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .social-media-icon {
+      border-radius: 24px;
+      background-color: grey;
+      margin: 2px;
+      padding-left: 0px;
+      width: 2rem;
+      padding-top: 3px;
+    }
+    .svg:not(:root).svg-inline--fa {
+      overflow: visible;
+      margin-top: 7px;
+    }
+  }
+  .your-email {
+    font-size: 10px;
   }
 }
 </style>
